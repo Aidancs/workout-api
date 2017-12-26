@@ -15,7 +15,7 @@ class CreateWorkoutsTable extends Migration
     {
         Schema::create('workouts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('workout_description');
+            $table->text('workout_description');
             $table->boolean('workout_type'); // push or power
             $table->boolean('count_for_work'); // yes or no
             $table->boolean('prescribed'); // yes or no
