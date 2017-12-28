@@ -25,6 +25,62 @@
                             </div>
                         </div>
 
+                        <div class="form-group{{ $errors->has('age') ? ' has-error' : '' }}">
+                            <label for="age" class="col-md-4 control-label">Age</label>
+
+                            <div class="col-md-6">
+                                <input id="age" type="text" class="form-control" name="age" value="{{ old('age') }}" required autofocus>
+
+                                @if ($errors->has('age'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('age') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('height') ? ' has-error' : '' }}">
+                            <label for="height" class="col-md-4 control-label">Height</label>
+
+                            <div class="col-md-6">
+                                <input id="height" type="text" class="form-control" name="height" value="{{ old('height') }}" required autofocus>
+
+                                @if ($errors->has('height'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('height') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('weight') ? ' has-error' : '' }}">
+                            <label for="weight" class="col-md-4 control-label">Weight</label>
+
+                            <div class="col-md-6">
+                                <input id="weight" type="text" class="form-control" name="weight" value="{{ old('weight') }}" required autofocus>
+
+                                @if ($errors->has('weight'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('weight') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('date_started') ? ' has-error' : '' }}">
+                            <label for="date_started" class="col-md-4 control-label">Date Started</label>
+
+                            <div class="col-md-6">
+                                <input id="date_started" type="text" class="form-control" name="date_started" value="{{ old('date_started') }}" required autofocus>
+
+                                @if ($errors->has('date_started'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('date_started') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
